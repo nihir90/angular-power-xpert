@@ -1,0 +1,35 @@
+<div class="page-wrap" fxLayout="row" fxLayoutAlign="center center" fxLayout="column">
+
+  <mat-card class="container" color="primary">
+    <img src="https://pxblue.github.io/static/media/pxblue.d5fa6462.svg" alt="Company or Product Logo" class="logo" />
+
+    <form [formGroup]="loginForm">
+      <mat-form-field>
+        <input matInput placeholder="Email Address" data-cy="login-email" formControlName="email" type="email" required />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="password" placeholder="Password" data-cy="login-password" formControlName="password" required />
+      </mat-form-field>
+      <div class="text-center mat-typography" fxLayout="row" fxLayoutAlign="space-between center" fxLayout="row-reverse" fxLayout.xs="column">
+        <button type="button" [disabled]="!loginForm.valid" mat-raised-button color="primary" data-cy="login-btn" class="login" (click)="login()">
+                    LOG IN
+                </button>
+        <mat-checkbox class="text-center mat-typography" data-cy="login-remember-me" formControlName="remember">Remember Me</mat-checkbox>
+      </div>
+      <br />
+    </form>
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <mat-icon color="primary" class="bolt">offline_bolt</mat-icon>
+    </div>
+    <div class="text-center mat-typography">
+      <h4>
+        By logging in you agree to our
+        <br />
+
+        <a class="links" href="">Terms and Conditions</a> and
+        <a class="links" href="">Privacy Policy</a>
+      </h4>
+    </div>
+
+  </mat-card>
+</div>

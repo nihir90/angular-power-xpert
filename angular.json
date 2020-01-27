@@ -27,7 +27,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/@pxblue/themes/angular/theme.scss",
+              "./node_modules/typeface-open-sans",
+              "./node_modules/@pxblue/icons/iconfont/PXBlueIcons.css"
             ],
             "scripts": [],
             "es5BrowserSupport": true
