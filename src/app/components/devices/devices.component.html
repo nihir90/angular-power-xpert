@@ -1,4 +1,3 @@
-
 <mat-toolbar color="primary">
     <button fxShow.gt-xs="false" type="button" aria-label="Toggle sidenav" mat-icon-button (click)="onMenuClicked()"
             style="margin-left:0; margin-right: 10px">
@@ -8,5 +7,19 @@
         <h6 class="example-app-name">{{title}}</h6>
     </div>
 </mat-toolbar>
-<div class="page-wrap" fxLayout="row" fxLayoutAlign="center center" fxLayout="column">
+<div class="page-wrap">
+<mat-tab-group (selectedTabChange)= "getAllocatedDevice($event);">
+    <mat-tab  label="Device List">
+        <app-list-devices></app-list-devices>
+    </mat-tab>
+
+    <mat-tab   label="Allocated Devices">
+        <app-allocated-devices></app-allocated-devices>
+    </mat-tab>
+
+    <mat-tab label="Available Devices">
+        <app-available-devices></app-available-devices>
+    </mat-tab>
+</mat-tab-group>
 </div>
+

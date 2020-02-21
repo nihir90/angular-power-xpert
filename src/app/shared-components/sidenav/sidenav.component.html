@@ -1,4 +1,4 @@
-<mat-sidenav-container class="app-container" (backdropClick)="open = false">
+<mat-sidenav-container  class="app-container" (backdropClick)="open = false">
     <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : (hovering ? 'side' : 'side')" class="sidenav"
                  [opened]="!mobileQuery.matches ? true : open" [class.mobile]="mobileQuery.matches" [class.open]="open || hovering"
                  (openedChange)="goingMobile = false">
@@ -22,7 +22,7 @@
                     <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
                 </button>
                 <div fxLayout="column">
-                    <span class="mat-subheading-2" style="margin:unset;">PX Blue Themes Example</span>
+                    <span class="mat-subheading-2" style="margin:unset;">Device Inventory App</span>
                 </div>
             </mat-toolbar>
             <mat-divider></mat-divider>
@@ -31,21 +31,17 @@
                          fxLayout="column"
                          (mouseover)="enter()"
                          (mouseleave)="leave()">
-                    <a mat-list-item [routerLinkActive]="['primaryLink']" routerLink="/dashboard" (click)="closeNav()">
+                <!--    <a mat-list-item [routerLinkActive]="['primaryLink']" routerLink="/dashboard" (click)="closeNav()">
                         <mat-icon matListIcon class="nav-icon">dashboard</mat-icon>
                         Dashboard
-                    </a>
+                    </a> -->
                     <a mat-list-item [routerLinkActive]="['primaryLink']" routerLink="/devices" (click)="closeNav()">
                         <mat-icon matListIcon class="nav-icon">devices</mat-icon>
                         Devices
                     </a>
-                    <a mat-list-item [routerLinkActive]="['primaryLink']" routerLink="/alarms" (click)="closeNav()">
-                        <mat-icon matListIcon class="nav-icon">notifications_none</mat-icon>
-                        Alarms
-                    </a>
-                    <a mat-list-item [routerLinkActive]="['primaryLink']" routerLink="/settings" (click)="closeNav()">
-                        <mat-icon matListIcon class="nav-icon">settings</mat-icon>
-                        Settings
+                    <a mat-list-item [routerLinkActive]="['primaryLink']" routerLink="/settings" (click)="logout()">
+                        <mat-icon matListIcon class="nav-icon">logout</mat-icon>
+                        Logout
                     </a>
                 </section>
             </div>

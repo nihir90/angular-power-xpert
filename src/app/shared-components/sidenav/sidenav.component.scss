@@ -93,7 +93,7 @@ section{
             background-color: unset!important;
         }
         .mat-list-item-content {
-            color: map-get($pxb-white, 50);
+            color: map-get($pxb-white, 50)!important;
         }
     }
 }

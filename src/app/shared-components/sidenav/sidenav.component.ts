@@ -1,6 +1,7 @@
 import {ChangeDetectorRef, Component, OnDestroy, ViewEncapsulation} from '@angular/core';
-import {NavigationService} from '../../services/navigation.service';
+import {CommonService} from '../../services/common/common.service';
 import {MediaMatcher} from '@angular/cdk/layout';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidenav',
@@ -11,6 +12,7 @@ import {MediaMatcher} from '@angular/cdk/layout';
 export class SidenavComponent implements OnDestroy {
 
     private _mobileQueryListener: () => void;
+    isLoggedIn = false;
 
     mobileQuery: MediaQueryList;
     hovering = false; // is the navigation menu hovered over
@@ -20,8 +22,9 @@ export class SidenavComponent implements OnDestroy {
     goingMobile = false; // we use this to prevent the flash of mobile sidenav when making the window smaller
 
     constructor(
-        private _navigationService: NavigationService,
+        private commonService: CommonService,
         changeDetectorRef: ChangeDetectorRef,
+        private readonly router: Router,
         media: MediaMatcher) {
         this.mobileQuery = media.matchMedia('(max-width: 600px)');
         this._mobileQueryListener = () => {
@@ -30,8 +33,9 @@ export class SidenavComponent implements OnDestroy {
             }
         };
         this.mobileQuery.addListener(this._mobileQueryListener);
+       
 
-        _navigationService.navToggled$.subscribe(
+        this.commonService.navToggled$.subscribe(
             value => {
                 this.open = !this.open;
                 changeDetectorRef.detectChanges();
@@ -44,7 +48,7 @@ export class SidenavComponent implements OnDestroy {
     }
 
     toggleDesktopMenu() {
-        this._navigationService.toggleMenu();
+        this.commonService.toggleMenu();
     }
 
     leave() {
@@ -63,5 +67,12 @@ export class SidenavComponent implements OnDestroy {
         this.open = false;
         this.hovering = false;
         this.hasLeft = false;
+    }
+
+    logout(){
+      this.commonService.logout();
+      this.commonService.disableSidebar(true);
+      this.router.navigateByUrl('login');
+
     }
 }

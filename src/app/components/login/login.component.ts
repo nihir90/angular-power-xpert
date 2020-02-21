@@ -39,9 +39,10 @@ export class LoginComponent implements OnInit {
             .login(this.loginForm.controls.email.value, this.loginForm.controls.password.value)
             .subscribe((matched) => {
                 if (matched) {
-                    this.router.navigateByUrl('dashboard');
+                    this.router.navigateByUrl('devices');
+                    this.commonService.enableSidebar(true);
                 } else {
-                    //alert('Enter valid Details');
+                    // alert('Enter valid Details');
                 }
             });
     }

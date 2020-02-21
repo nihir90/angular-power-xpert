@@ -1,0 +1,24 @@
+
+<mat-card class="example-card" *ngFor="let device of deviceList">
+	<mat-card-header>
+    <mat-icon *ngIf = "device.StatusCode !== 'ALLOCATE'" (click) = "allocateDevice(device ,alertPopup);" >more_vert</mat-icon>
+		<div mat-card-avatar class="example-header-image"></div>
+		<mat-card-title>{{device.name}}</mat-card-title>
+		<mat-card-subtitle>Height : {{device.height}}  Width: {{device.width}}</mat-card-subtitle>
+		<mat-card-subtitle>Pixel Ratio : {{device.pixelRatio}} </mat-card-subtitle>
+
+	</mat-card-header>
+</mat-card>
+<ng-template #alertPopup>
+<mat-dialog-content>
+<p>
+  Do you want to allocate Device?
+</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onYesClick()" tabindex="1">YES</button>
+  <button mat-button mat-dialog-close tabindex="-1">NO</button>
+</mat-dialog-actions>
+</ng-template>
+
+

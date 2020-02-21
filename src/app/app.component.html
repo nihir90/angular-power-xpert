@@ -1,4 +1,4 @@
-<app-sidenav>
+<app-sidenav *ngIf="isLoggedIn">
     <router-outlet></router-outlet>
     <div>
         <button mat-fab class="fab fab1" color="primary" (click)="toggleTheme()">
@@ -6,5 +6,27 @@
         </button>
         <button mat-chip class="fab fab2">{{currentTheme.themeName}}</button>
     </div>
+    
+<div class="overlay" (click)="showNotice=false" *ngIf="showNotice">
+    <div class="notice">
+        <div fxLayout="row" fxLayoutAlign="end" class="x" style="height:0">
+            <button mat-icon-button (click)="showNotice=false">
+                <mat-icon>close</mat-icon>
+            </button>
+        </div>
+        <div class="notice-content">
+            <h1>
+                Welcome to device Inventory App
+            </h1>
+            <p>
+               This app is help you to allocate and deallocate mobile device and track the device information. For allocate <br/>
+                the mobile device please go to device list and click to allocate button (:)  
+
+            </p>
+        </div>
+    </div>
+</div>
 </app-sidenav>
-<router-outlet></router-outlet>
+<div *ngIf="!isLoggedIn">
+    <router-outlet></router-outlet>
+  </div>
