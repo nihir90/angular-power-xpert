@@ -1,6 +1,6 @@
 import { Component, OnInit, OnChanges , Input , SimpleChanges } from "@angular/core";
-import { CommonService } from "src/app/services/common/common.service";
-import { DevicesService } from "src/app/services/devices/devices.service";
+import { CommonService } from "../../../../services/common/common.service";
+import { DevicesService } from "../../../../services/devices/devices.service";
 
 import {
   VERSION,

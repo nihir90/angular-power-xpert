@@ -1,5 +1,5 @@
 import { Component, OnInit, Renderer2 } from "@angular/core";
-import { CommonService } from "src/app/services/common/common.service";
+import { CommonService } from "./services/common/common.service";
 import { Router } from "@angular/router";
 
 @Component({

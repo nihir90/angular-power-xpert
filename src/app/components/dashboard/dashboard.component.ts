@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonService } from 'src/app/services/common/common.service';
+import { CommonService } from '../../services/common/common.service';
 
 @Component({
   selector: 'app-dashboard',
