@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { DevicesService } from "../../../../services/devices/devices.service";
-import { CommonService } from "src/app/services/common/common.service";
+import { CommonService } from "../../../../services/common/common.service";
 
 import {
   VERSION,
