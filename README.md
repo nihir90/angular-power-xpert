@@ -1,27 +1,37 @@
-# MyFirstProject
+# DeviceInventoryAPP
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+ This app is help you to allocate and deallocate mobile device and track the device information. 
 
-## Development server
+#PXBlue
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+I have used pxblue package like angular component(login ,sidebar, popup) , theme , color,icon ,progress bar to create the application. i have created git repo and deployed the app on stackblitz.
 
-## Code scaffolding
+# DeviceInventoryFunctionality
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1.  navigate to below url to open the application :
+     https://parigqnov.github.stackblitz.io/login
 
-## Build
+2. Login with any dummy email/password to navigate listing screen. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+3. After successful login , user can see all the device listing information. i am fetching all the device info from
+   static json file which is defined in service.       
 
-## Running unit tests
+4. For allocated the device user need to click right side (:) so user will get popup for asking allocate device. if 
+   user click on Yes so device will allocate successfully and we can track all the allocated device in allocate 
+   listing.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+5.  For Deallocation, click on allocated device and click on deallocate button to dellocate device.
 
-## Running end-to-end tests
+6.  For available device tab, user can see all listing the available devices.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+7.   User can logout using clicking of logout tab.       
+
+#PXBlueResusableComponent
+
+1. Login Component
+2. Color Theme 
+3. Tabs Component
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To get more help please mail me on nihirshah90@gmail.com
