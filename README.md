@@ -15,14 +15,14 @@ I have used pxblue package like angular component(login ,sidebar, popup) , theme
 
 2. Login with any dummy email/password to navigate listing screen. 
 
-3. After successful login , user can see all the device listing information. i am fetching all the device info from
-   static json file which is defined in service.       
+3. After successful login, the user can see all the device listing information. I am fetching all the device info 
+   from static json file which is defined in the service.
 
-4. For allocated the device user need to click right side (:) so user will get popup for asking allocate device. if 
-   user click on Yes so device will allocate successfully and we can track all the allocated device in allocate 
-   listing.
+4. For allocated the device user need to click right side (:) so users will get a popup for asking allocate device.
+    If user click on Yes, so the device will allocate successful and we can track all the allocated device in allocate device Listing.
 
-5.  For Deallocation, click on allocated device and click on deallocate button to dellocate device.
+
+5.  For Deallocation, click on allocated device tab and click on deallocate button to dellocate device.
 
 6.  For available device tab, user can see all listing the available devices.
 
