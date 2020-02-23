@@ -10,9 +10,9 @@ import {MaterialModule} from './core/material.module';
 
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DevicesComponent } from './components/devices/devices.component';
-import { ListDevicesComponent } from './components/devices/tabs/list-devices/list-devices/list-devices.component';
-import { AllocatedDevicesComponent } from './components/devices/tabs/allocated-devices/allocated-devices/allocated-devices.component';
-import { AvailableDevicesComponent } from './components/devices/available-devices/available-devices/available-devices.component';
+import { ListDevicesComponent } from './components/devices/tabs/list-devices/list-devices.component';
+import { AllocatedDevicesComponent } from './components/devices/tabs/allocated-devices/allocated-devices.component';
+import { AvailableDevicesComponent } from './components/devices/tabs/available-devices/available-devices.component';
 import { SettingsComponent } from './components/settings/settings.component';
 
 @NgModule({
