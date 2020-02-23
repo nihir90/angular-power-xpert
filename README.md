@@ -1,6 +1,7 @@
 # DeviceInventoryAPP
 
- This app is help you to allocate and deallocate mobile device and track the device information. 
+ This app is help you to allocate and deallocate mobile device and track the device information.  App is reponsive and it will work on (mobile + web) browser
+
 
 #PXBlue
 
@@ -26,6 +27,7 @@ I have used pxblue package like angular component(login ,sidebar, popup) , theme
 6.  For available device tab, user can see all listing the available devices.
 
 7.   User can logout using clicking of logout tab.       
+
 
 #PXBlueComponent
 
