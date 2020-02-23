@@ -9,7 +9,7 @@ I have used pxblue package like angular component(login ,sidebar, popup) , theme
 # DeviceInventoryFunctionality
 
 1.  navigate to below url to open the application :
-    https://stackblitz.com/github/xoriwjkvb  or
+    https://xoriwjkvb.github.stackblitz.io/login  
     https://stackblitz.com/github/nihir90/angular-power-xpert
 
 2. Login with any dummy email/password to navigate listing screen. 
@@ -39,4 +39,4 @@ I have used pxblue package like angular component(login ,sidebar, popup) , theme
 ## Further help
 
 To get more help please mail me on nihirshah90@gmail.com
-let me know ifany further changes required. 
+let me know if any further changes required. 
