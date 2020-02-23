@@ -9,7 +9,8 @@ I have used pxblue package like angular component(login ,sidebar, popup) , theme
 # DeviceInventoryFunctionality
 
 1.  navigate to below url to open the application :
-     https://parigqnov.github.stackblitz.io/login
+    https://stackblitz.com/github/xoriwjkvb  or
+    https://stackblitz.com/github/nihir90/angular-power-xpert
 
 2. Login with any dummy email/password to navigate listing screen. 
 
@@ -26,7 +27,7 @@ I have used pxblue package like angular component(login ,sidebar, popup) , theme
 
 7.   User can logout using clicking of logout tab.       
 
-#PXBlueResusableComponent
+#PXBlueComponent
 
 1. Login Component
 2. Color Theme 
