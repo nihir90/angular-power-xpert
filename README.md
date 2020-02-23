@@ -31,7 +31,11 @@ I have used pxblue package like angular component(login ,sidebar, popup) , theme
 1. Login Component
 2. Color Theme 
 3. Tabs Component
+4. Sidebar
+5. Listing of data
+
 
 ## Further help
 
 To get more help please mail me on nihirshah90@gmail.com
+let me know ifany further changes required. 

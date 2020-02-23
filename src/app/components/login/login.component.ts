@@ -19,6 +19,8 @@ export class LoginComponent implements OnInit {
     ) {}
 
     ngOnInit(): void {
+       this.commonService.logout();
+       this.commonService.disableSidebar(true);
         this.loginForm = this.fb.group({
             email: ['', Validators.compose([Validators.required, Validators.pattern(EMAIL_REGEX)])],
             password: ['', Validators.compose([Validators.required])],
